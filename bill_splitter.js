@@ -6,3 +6,10 @@ if (x >= 50 && x <= 300) {//using the && operator to identify bill values within
 } else {
     var t = x*0.2;
 }
+
+//Task 2: Output Details
+
+var TotalAmount= x + t; //calculate total amount by adding bill and tip amounts
+
+console.log(`The Bill was $${x}, the tip was $${t} and the total value is $${TotalAmount}.`)
+//output the calculated amounts in string format
