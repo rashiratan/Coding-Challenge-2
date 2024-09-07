@@ -29,3 +29,9 @@ function calculateTip(Bill) {
 console.log(`Test run for function with input of $100 gives $${calculateTip(100)}`)
 //testing function use
 
+//Task 4: Utilize Arrays
+let bills = [125, 555, 44];
+let tips = bills.map(bill => calculateTip(bill)); //using created function to calculate tips for bills array
+console.log(`Your tips for the given bill amounts of $125, $555, $44 are: $${tips} respectively.`);
+let totals = bills.map(bill => bill+ calculateTip(bill)); //calculating the totals for each amount and storing in totals array
+console.log(`Your totals for the given bill amounts of $125, $555, $44 including tips are: $${totals} respectively.`);
